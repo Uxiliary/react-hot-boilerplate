@@ -1,0 +1,18 @@
+@import '../app/app.scss';
+
+.risk {
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+  dl {
+    float: left;
+    margin: 20px 20px 0 0;
+  }
+  dd {
+    font-size: 0.8125rem;
+    margin-top: 5px;
+  }
+  #dial {
+    float: right;
+  }
+}

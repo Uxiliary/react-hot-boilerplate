@@ -1,0 +1,130 @@
+/* Colors */
+$body-background: #59778f;
+$content-background: #fff;
+$content-text: #555;
+$footer-text: #5e5e5e;
+$footer-background: #e4e4e4;
+$section-line: 1px solid $footer-background;
+$placeholder: #767676;
+/* Yellow */
+$color-1: #f0b000;
+/* Orange */
+$color-2: #ed5f04;
+/* Red */
+$color-3: #eb2424;
+/* Blue */
+$color-4: #1b9dc7;
+$color-5: #3ec5e0;
+$color-6: #007b94;
+/* Button Gray */
+$color-7: #e4e4e4;
+$button-text: #919191;
+/* Lime Green */
+$color-8: #8abd4f;
+// Roboto
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700italic,700,500italic,400italic,500,300italic,300,100italic,100,900italic,900);
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.roboto-reg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: light;
+}
+
+// Icons
+@font-face {
+  font-family: 'ca-icons';
+  src: url("/fonts/ca-icons.eot?are9yd");
+  src: url("/fonts/ca-icons.eot?#iefixare9yd") format('embedded-opentype'), url("/fonts/ca-icons.woff?are9yd") format('woff'), url("/fonts/ca-icons.ttf?are9yd") format('truetype'), url("/fonts/ca-icons.svg?are9yd#ca-icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+input[type="checkbox"] + span:before,
+.button:before,
+.button:after,
+.carousel button:before,
+.tags li:before,
+.subscribed .ppc-percents span::after {
+  font-family: 'ca-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// Icons
+.icon-add:before,
+.brands input[type="checkbox"] + span:before {
+  content: "\f067";
+}
+.icon-check:before,
+.brands input[type="checkbox"]:checked + span:before,
+.subscribed .ppc-percents span::after {
+  content: "\f00c";
+}
+.icon-delete:before {
+  content: "\f00d";
+}
+.icon-magnify:before {
+  content: "\f00e";
+}
+.icon-lock:before {
+  content: "\f023";
+}
+.icon-back:before {
+  content: "\f04a";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+.icon-pause:before {
+  content: "\f04c";
+}
+.icon-forward:before {
+  content: "\f04e";
+}
+.icon-arrow-left:before,
+.button.back:before,
+button.back:before {
+  content: "\f053";
+}
+.icon-arrow-right:before,
+.button.next:after,
+button.forward:before {
+  content: "\f054";
+}
+.icon-arrow-up:before {
+  content: "\f077";
+}
+.icon-arrow-down:before {
+  content: "\f078";
+}
+.icon-facebook:before {
+  content: "\f082";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-checkbox:before,
+.checks input[type="checkbox"] + span:before {
+  content: "\f0c8";
+}
+.icon-mail:before {
+  content: "\f0e0";
+}
+.icon-checkbox-checked:before,
+.checks input[type="checkbox"]:checked + span:before,
+.tags li:before {
+  content: "\f14a";
+}

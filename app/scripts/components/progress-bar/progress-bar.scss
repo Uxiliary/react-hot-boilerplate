@@ -1,0 +1,61 @@
+@import '../app/app.scss';
+
+.progressbar {
+	width: 100%;
+	height: 8px;
+	border-radius: 4px;
+	background: #d9d9d9
+}
+
+.progressbar span {
+	display: block;
+ background-color: $color-4;
+	height: 8px;
+	border-radius: 4px;
+	width:auto;
+}
+
+$size: 60px;
+.progress-pie-chart {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: #3f1f18;
+  position: relative;
+  &.gt-50 {
+    background-color: #f2830c;
+  }
+}
+.ppc-progress {
+  @include circle($size);
+  clip: rect(0, $size, $size, #{$size/2});
+  .ppc-progress-fill {
+    @include circle($size);
+    clip: rect(0, #{$size/2}, $size, 0);
+    background: #f2830c;
+    transform: rotate(60deg);
+  }
+  .gt-50 & {
+    clip: rect(0, #{$size/2}, $size, 0);
+    .ppc-progress-fill {
+      clip: rect(0, $size, $size, #{$size/2});
+      background: #3f1f18;
+    }
+  }
+}
+.ppc-percents {
+  @include circle(#{$size/1.2});
+  background: #7d5a54;
+  text-align: center;
+  display: table;
+  span {
+    display: block;
+    font-size: 1rem;
+    @extend .roboto-bold;
+    color: #fff;
+  }
+}
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}

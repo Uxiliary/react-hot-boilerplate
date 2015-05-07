@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './scripts/index'
+    './app/scripts/index'
   ],
   output: {
     path: path.join(__dirname, 'build'),
@@ -24,7 +24,15 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       loaders: ['react-hot', 'babel'],
-      include: path.join(__dirname, 'scripts')
+      include: path.join(__dirname, 'app/scripts')
+    },
+    {
+      test: /\.scss$|\.css$/,
+      loader: 'style-loader!css-loader!sass-loader'
+    },
+    {
+      test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+      loader: "file"
     }]
   }
 };

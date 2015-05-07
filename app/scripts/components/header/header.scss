@@ -1,0 +1,25 @@
+@import '../app/app.scss';
+
+/* Header */
+header {
+	background: #000 url(/images/header.jpg);
+	background-size: cover;
+	color: #fff;
+	padding: 40px 0;
+	@extend .roboto-reg;
+}
+#logo {
+	display: block;
+}
+nav a {
+	color: #fff;
+	display: block
+}
+.signup .short {
+	display: none
+}
+#slides {
+	width: 100%;
+	min-height: 120px;
+	max-width: 550px
+}
