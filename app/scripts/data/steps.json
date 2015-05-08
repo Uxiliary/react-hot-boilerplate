@@ -1,0 +1,14 @@
+[
+  {
+    "step": "signup",
+    "title": "Sign up"
+  },
+  {
+    "step": "connect",
+    "title": "Connect"
+  },
+  {
+    "step": "kids",
+    "title": "Kids"
+  },
+]

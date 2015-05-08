@@ -1,10 +1,11 @@
 import React from 'react';
 import './progress-bar.scss';
+import Steps from '../../data/steps.json';
 
 export default class ProgressBar extends React.Component {
   render() {
     return (
-      <ol className="breadcrumbs">
+      <ol className="breadcrumbs" data={Steps} >
         <li>Sign up</li>
         <li>Connect</li>
         <li>Kids</li>

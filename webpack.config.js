@@ -33,6 +33,10 @@ module.exports = {
     {
       test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
       loader: "file"
+    },
+    {
+      test: /\.json$/,
+      loader: "raw-loader"
     }]
   }
 };
