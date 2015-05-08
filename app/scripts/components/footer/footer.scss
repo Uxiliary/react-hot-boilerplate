@@ -1,0 +1,27 @@
+@import '../app/app.scss';
+
+/* Footer */
+footer {
+  font-family: "regular";
+  font-size: 0.75rem;
+  color: $footer-text;
+  background: $footer-background;
+  padding: 43px 0 23px;
+  a {
+    color: $footer-text;
+    font-weight: bold;
+  }
+  a:before {
+    content: "|\00a0";
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 0.1rem;
+  }
+  p {
+    float: left;
+    padding-top: 1.375rem;
+  }
+  img {
+    float: right;
+  }
+}

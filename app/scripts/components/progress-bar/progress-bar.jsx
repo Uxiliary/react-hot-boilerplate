@@ -1,22 +1,53 @@
 import React from 'react';
 import './progress-bar.scss';
-import Steps from '../../data/steps.json';
+
+var fetchSteps = (cb) => {
+  setTimeout(() => {
+    cb([
+      {
+        "step": "signup",
+        "title": "Sign up"
+      },
+      {
+        "step": "connect",
+        "title": "Connect"
+      },
+      {
+        "step": "kids",
+        "title": "Kids"
+      },
+    ]);
+  }, 500)
+}
 
 export default class ProgressBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: props.initialValue };
+  }
+
+  componentDidMount() {
+    fetchSteps((steps) => {
+      this.setState({
+        steps,
+        loaded: true
+      });
+    });
+  }
+
   render() {
+    if (!this.state.loaded)
+      return <div>Loading</div>;
+
+    var steps = this.state.steps.map((step) => {
+      return <li>{step.title}</li>;
+    });
     return (
-      <ol className="breadcrumbs" data={Steps} >
-        <li>Sign up</li>
-        <li>Connect</li>
-        <li>Kids</li>
-        <li>Pets</li>
-        <li>Allergies</li>
-        <li>Medications</li>
-        <li>Stores</li>
-        <li>Vehicles</li>
-        <li>Yourself</li>
-        <li>Subscribed!</li>
-      </ol>
+      <div>
+        <ol className="breadcrumbs" >
+          {steps}
+        </ol>
+      </div>
     );
   }
 }
