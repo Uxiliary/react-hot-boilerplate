@@ -1,0 +1,84 @@
+@import '../app/variables.scss';
+
+/* Steps pages */
+.step {
+  main {
+    text-align: center;
+  }
+  section {
+    text-align: left;
+    max-width: 460px;
+    padding: 40px 25px 0;
+    margin: auto;
+    @extend .roboto-light;
+    line-height: 1.375rem;
+  }
+  section:nth-child(3n) {
+    padding-top: 0;
+  }
+  .slider {
+    max-width: 560px;
+  }
+  article {
+    padding-bottom: 60px;
+    background: $content-background;
+  }
+  #logo {
+    width: 133px;
+  }
+  legend,
+  h2 {
+    @extend .roboto-bold;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .checks {
+    margin-bottom: 20px;
+    label {
+      display: block;
+      float: left;
+      border-radius: 0.2rem;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      border: 1px solid #d9d9d9;
+      padding: 10px 10px 10px 40px;
+      position: relative;
+      font-size: 0.9375rem;
+    }
+    label.selected {
+      background: #e8e8e8;
+    }
+  }
+  .three-col label {
+    width: 32%;
+  }
+  .four-col label {
+    width: 23.5%;
+  }
+  .three-col label:nth-child(3n),
+  .four-col label:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.stage {
+  margin-bottom: 25px;
+  h1 {
+    color: #1b9dc7;
+    font-size: 1.625rem;
+    margin-bottom: 25px;
+    line-height: 1.2;
+  }
+}
+
+.quiz {
+  input[type="email"] {
+    display: block;
+    width: 100%;
+    margin: 7px 0 10px;
+  }
+  label {
+    color: #a3a3a3;
+    font-size: 0.8125rem;
+  }
+}

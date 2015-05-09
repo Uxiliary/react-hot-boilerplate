@@ -1,4 +1,5 @@
-@import '../app/variables.scss';
+@import '../../app/variables.scss';
+
 @mixin circle($size) {
   content: "";
   position: absolute;
@@ -8,19 +9,6 @@
   width: $size;
   height: $size;
 }
-
-.progress {
-  float: left;
-  margin-bottom: 20px;
-  text-align: left;
-  * {
-    display: inline-block;
-  }
-  dt {
-    margin-right: 0.25rem;
-  }
-}
-
 
 .progressbar {
   width: 100%;

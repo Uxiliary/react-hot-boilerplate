@@ -1,0 +1,16 @@
+@import '../../app/variables.scss';
+
+.step-number {
+  float: left;
+  margin-bottom: 20px;
+  text-align: left;
+  * {
+    display: inline-block;
+  }
+  dt {
+    margin-right: 0.25rem;
+  }
+  dd {
+    margin: 0;
+  }
+}

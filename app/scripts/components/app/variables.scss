@@ -26,15 +26,15 @@ $color-8: #8abd4f;
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700italic,700,500italic,400italic,500,300italic,300,100italic,100,900italic,900);
 .roboto-bold {
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .roboto-reg {
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 300;
 }
 .roboto-light {
   font-family: 'Roboto', sans-serif;
-  font-weight: light;
+  font-weight: 100;
 }
 
 // Icons
