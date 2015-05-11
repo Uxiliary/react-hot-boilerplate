@@ -1,5 +1,5 @@
-
 @import 'variables.scss';
+@import 'transitions.scss';
 
 html,
 body {
@@ -12,24 +12,23 @@ html {
 body {
   text-align: center;
   @extend .roboto-light;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.2)
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
 }
 body * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 em {
   font-weight: 300;
-	font-style: normal;
+  font-style: normal;
 }
 h1,
 h2,
 h3 {
-	@extend .roboto-bold;
+  @extend .roboto-bold;
 }
 input {
-	@extend .roboto-light;
+  @extend .roboto-light;
 }
 a {
   text-decoration: none;
@@ -48,7 +47,6 @@ img {
 .col {
   float: left;
 }
-
 section:after,
 div:after,
 ul:after,
@@ -58,14 +56,6 @@ article:after {
   content: "";
   display: table;
   clear: both;
-}
-select,
-textarea,
-input,
-button,
-input[type="number"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 input[type="text"],
 input[type="email"],
@@ -88,48 +78,10 @@ select {
   padding: 0.5rem 2rem 0.5rem 0.85rem;
   font-size: 0.9375rem;
 }
-
 main {
-  color:$content-text;
+  color: $content-text;
 }
 
-.button,
-button {
-  border-radius: 0.25rem;
-  @extend .roboto-bold;
-  padding: 0 0.5rem;
-  display: block;
-  border: 0;
-  background: $color-4;
-  color: #fff;
-  font-size: 1.063rem;
-  text-align: center;
-  line-height: 40px;
-}
-.button:hover,
-button:hover {
-  background: $color-5;
-}
-.button:active,
-button:active {
-  background: $color-6;
-}
-.button.inline {
-  width: 49%;
-  float: left;
-}
-.button.inline + .button.inline {
-  width: 49%;
-  float: left;
-  margin-left: 2%;
-}
-.button.back {
-  background: $color-7;
-  color: $button-text;
-}
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
 ::placeholder,
 .placeholder {
   color: $placeholder;
@@ -142,7 +94,6 @@ button:active {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.27);
   font-size: 0.9375rem;
 }
-
 .checks {
   input[type="checkbox"] + span:before {
     display: block;
@@ -156,10 +107,9 @@ button:active {
     color: $color-4;
   }
 }
-
 #percent span {
   float: right;
-	@extend .roboto-light;
+  @extend .roboto-light;
 }
 .button.back:before {
   font-size: 0.85rem;
@@ -302,7 +252,7 @@ button:active {
     border-radius: 0.25rem;
     padding: 0.7rem;
     label {
-			@extend .roboto-bold;
+      @extend .roboto-bold;
       margin-bottom: 0;
       line-height: 1rem;
     }
@@ -504,7 +454,7 @@ input[type="radio"]:checked + span {
       padding: 7px 9px;
       font-size: 0.9375rem;
       background: #e8e8e8;
-			@extend .roboto-bold;
+      @extend .roboto-bold;
       line-height: 1;
     }
     li:before {

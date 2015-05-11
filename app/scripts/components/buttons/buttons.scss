@@ -1,0 +1,37 @@
+@import '../app/variables.scss';
+.button,
+button {
+  border-radius: 0.25rem;
+  @extend .roboto-bold;
+  padding: 0 0.5rem;
+  display: block;
+  border: 0;
+  background: $color-4;
+  color: #fff;
+  font-size: 1.063rem;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+}
+
+.button:hover,
+button:hover {
+  background: $color-5;
+}
+.button:active,
+button:active {
+  background: $color-6;
+}
+.button.inline {
+  width: 49%;
+  float: left;
+}
+.button.inline + .button.inline {
+  width: 49%;
+  float: left;
+  margin-left: 2%;
+}
+.button.back {
+  background: $color-7;
+  color: $button-text;
+}

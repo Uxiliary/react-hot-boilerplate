@@ -9,7 +9,7 @@ export default class Header extends React.Component {
     return (
       <header className="static">
         <div className="inner">
-          <div className="col"><a href="../index.htm" id="logo"><img src="/images/color-logo.png" alt="ConsumerAlerts" /></a>
+          <div className="col"><a href="/" id="logo"><img src="/images/color-logo.png" alt="ConsumerAlerts" /></a>
             <StepNumber/>
           </div>
           <RiskLevel/>
